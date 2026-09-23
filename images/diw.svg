@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 240" role="img" aria-labelledby="title desc">
+  <title id="title">DIW</title>
+  <desc id="desc">Desenvolvimento de Interfaces Web</desc>
+  <rect width="640" height="240" rx="24" fill="#17324d"/>
+  <circle cx="120" cy="120" r="64" fill="#f3b562"/>
+  <path d="M95 120h50M120 95v50" stroke="#17324d" stroke-width="12" stroke-linecap="round"/>
+  <text x="215" y="135" fill="#fff" font-family="sans-serif" font-size="72" font-weight="700">DIW</text>
+</svg>
