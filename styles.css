@@ -1,5 +1,5 @@
 :root {
-  --dark: #222222;
+  --dark: #222;
   --green: #315b45;
 }
 
@@ -34,7 +34,7 @@ section {
 .hero::before {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 35%);
   content: "";
 }
 
@@ -74,7 +74,7 @@ nav a:focus-visible {
   max-width: 600px;
   margin-bottom: 48px;
   padding: 24px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 50%);
 }
 
 h1,

@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  background-color: #eeeeee;
-  color: #222222;
+  background-color: #eee;
+  color: #222;
   font-family: Arial, sans-serif;
   line-height: 1.5;
 }
@@ -58,7 +58,7 @@ iframe {
 
 article {
   padding: 16px;
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   background-color: #fafafa;
 }
 
@@ -82,13 +82,9 @@ article h3 {
 
 footer {
   padding: 16px;
-  background-color: #222222;
+  background-color: #222;
   color: white;
   text-align: center;
-}
-
-footer p {
-  margin: 0;
 }
 
 @media (width <= 650px) {

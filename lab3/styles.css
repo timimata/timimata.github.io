@@ -4,8 +4,8 @@
 
 body {
   margin: 0;
-  background-color: #eeeeee;
-  color: #222222;
+  background-color: #eee;
+  color: #222;
   font-family: Arial, sans-serif;
   line-height: 1.5;
 }
@@ -24,7 +24,7 @@ header h1 {
 
 nav {
   padding: 8px 24px;
-  background-color: #222222;
+  background-color: #222;
   text-align: center;
 }
 
@@ -56,6 +56,26 @@ main {
   background-color: white;
 }
 
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  margin-top: 28px;
+}
+
+main > nav {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: transparent;
+  gap: 12px;
+  text-align: left;
+}
+
+main > nav a {
+  color: #0645ad;
+}
+
 .multimedia-main {
   width: 100%;
   margin: 0;
@@ -73,23 +93,6 @@ main {
 
 .multimedia-main > h2 {
   padding-top: 24px;
-}
-
-h2 {
-  margin-top: 0;
-}
-
-h3 {
-  margin-top: 28px;
-}
-
-main > nav {
-  background-color: transparent;
-  text-align: left;
-}
-
-main > nav a {
-  color: #0645ad;
 }
 
 iframe {
@@ -125,12 +128,6 @@ iframe {
 
 section {
   margin-top: 32px;
-}
-
-.multimedia-main > nav {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
 }
 
 .imagem-emblematica {
@@ -185,7 +182,7 @@ section {
 .video-background::after {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 35%);
   content: "";
 }
 
@@ -213,7 +210,7 @@ section {
 .parallax::before {
   position: absolute;
   inset: 0;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 35%);
   content: "";
 }
 
@@ -294,12 +291,12 @@ table {
 .info-curiosidades {
   grid-column: span 3;
   padding-top: 16px;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
 }
 
 th,
 td {
-  border: 1px solid #999999;
+  border: 1px solid #999;
   padding: 8px;
   text-align: left;
 }
@@ -309,18 +306,14 @@ th {
 }
 
 td {
-  color: #444444;
+  color: #444;
 }
 
 footer {
   padding: 16px 24px;
-  background-color: #222222;
+  background-color: #222;
   color: white;
   text-align: center;
-}
-
-footer p {
-  margin: 0;
 }
 
 @media (width <= 600px) {
@@ -390,6 +383,6 @@ footer p {
 
   body > nav a {
     width: min(100%, 220px);
-    border-bottom: 1px solid #555555;
+    border-bottom: 1px solid #555;
   }
 }
