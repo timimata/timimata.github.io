@@ -43,7 +43,7 @@ footer p {
   margin: 0;
 }
 
-@media (max-width: 500px) {
+@media (width <= 500px) {
   body {
     padding: 16px;
   }
