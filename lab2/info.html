@@ -4,9 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sintra - Informação</title>
-    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <header>
+      <h1>A minha cidade: Sintra</h1>
+    </header>
+
     <nav aria-label="Navegação da cidade">
       <a href="index.html">Início</a>
       <a href="local.html">Localização</a>
@@ -14,13 +18,60 @@
       <a href="info.html">Informação</a>
     </nav>
 
+    <img
+      class="imagem-capa"
+      src="images/capa.jpg"
+      alt="Palácio da Pena em Sintra"
+    />
+
     <main>
-      <h1>Informação</h1>
-      <p>Sintra tem uma história ligada à serra, aos palácios e à natureza.</p>
+      <h2>Informações</h2>
+      <p>Esta tabela reúne alguns dados importantes sobre Sintra.</p>
+
+      <table>
+        <caption>
+          Dados de Sintra
+        </caption>
+        <thead>
+          <tr>
+            <th colspan="3">Informação geral</th>
+          </tr>
+          <tr>
+            <th scope="col">Categoria</th>
+            <th scope="col">Dado</th>
+            <th scope="col">Valor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2" scope="rowgroup">Geografia</th>
+            <td>País</td>
+            <td>Portugal</td>
+          </tr>
+          <tr>
+            <td>Distrito</td>
+            <td>Lisboa</td>
+          </tr>
+          <tr>
+            <th scope="row">Património</th>
+            <td>Monumento conhecido</td>
+            <td>Palácio da Pena</td>
+          </tr>
+          <tr>
+            <th scope="row">Paisagem</th>
+            <td>Localização</td>
+            <td>Serra e oceano Atlântico</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Curiosidades sobre Sintra</h3>
       <ul>
-        <li>País: Portugal</li>
-        <li>Região: Lisboa</li>
-        <li>Localização: Serra de Sintra</li>
+        <li>Sintra é conhecida pelos seus palácios e jardins.</li>
+        <li>O Palácio da Pena tem cores muito vivas.</li>
+        <li>A Serra de Sintra tem muitas árvores e caminhos.</li>
+        <li>O Castelo dos Mouros fica no alto da serra.</li>
+        <li>Sintra fica perto de praias como a Praia da Adraga.</li>
       </ul>
     </main>
 
