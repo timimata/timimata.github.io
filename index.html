@@ -7,34 +7,63 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>O meu primeiro site</h1>
-    </header>
+    <main>
+      <section id="inicio" class="hero">
+        <nav aria-label="Navegação principal">
+          <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#disciplina">Interfaces Web</a></li>
+            <li><a href="tutoriais.html">Tutoriais</a></li>
+          </ul>
+        </nav>
 
-    <nav aria-label="Navegação principal">
-      <ul>
-        <li><a href="lab1/index.html">Lab 1</a></li>
-        <li><a href="lab2/index.html">Lab 2</a></li>
-      </ul>
-    </nav>
+        <div class="hero-conteudo">
+          <h1>Tiago Machado</h1>
+          <p>Esta é a minha página da disciplina.</p>
+          <a class="botao" href="#projetos">Ver projetos</a>
+        </div>
+      </section>
 
-    <main id="inicio">
-      <p>Esta é a minha primeira página Web.</p>
-      <p>Na disciplina de Desenvolvimento de Interfaces Web aprendemos:</p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <p>
-        <a
-          href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Visitar o Moodle
-        </a>
-      </p>
+      <section id="projetos" class="projetos">
+        <h2>Projetos</h2>
+        <p>Aqui estão os laboratórios realizados na disciplina.</p>
+
+        <div class="cartoes">
+          <a class="cartao" href="lab1/index.html">
+            <h3>Lab 1</h3>
+            <p>A minha cidade: Sintra</p>
+          </a>
+          <a class="cartao" href="lab2/index.html">
+            <h3>Lab 2</h3>
+            <p>Informação e multimédia.</p>
+          </a>
+          <a class="cartao" href="lab3/index.html">
+            <h3>Lab 3</h3>
+            <p>Layout responsivo.</p>
+          </a>
+        </div>
+      </section>
+
+      <section id="disciplina" class="disciplina">
+        <div class="disciplina-texto">
+          <h2>Interfaces Web</h2>
+          <p>Na disciplina aprendemos a criar páginas para a web.</p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          <a
+            class="link"
+            href="https://moodle.ensinolusofona.pt/course/view.php?id=27320"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Visitar o Moodle
+          </a>
+        </div>
+      </section>
     </main>
 
     <footer>

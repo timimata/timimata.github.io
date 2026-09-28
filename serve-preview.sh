@@ -11,6 +11,14 @@ case "$request" in
     printf 'HTTP/1.1 200 OK\r\nContent-Type: text/css\r\nConnection: close\r\n\r\n'
     cat lab2/styles.css
     ;;
+  GET\ /lab1/styles.css*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/css\r\nConnection: close\r\n\r\n'
+    cat lab2/styles.css
+    ;;
+  GET\ /lab3/styles.css*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/css\r\nConnection: close\r\n\r\n'
+    cat lab3/styles.css
+    ;;
   GET\ /images/diw.svg*)
     printf 'HTTP/1.1 200 OK\r\nContent-Type: image/svg+xml\r\nConnection: close\r\n\r\n'
     cat images/diw.svg
@@ -51,6 +59,12 @@ case "$request" in
     printf 'HTTP/1.1 200 OK\r\nContent-Type: image/jpeg\r\nConnection: close\r\n\r\n'
     cat lab2/images/capa.jpg
     ;;
+  GET\ /lab3/images/*.jpg*)
+    file=${request#GET /}
+    file=${file%% *}
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: image/jpeg\r\nConnection: close\r\n\r\n'
+    cat "$file"
+    ;;
   GET\ /lab1/index.html*)
     printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'
     cat lab1/index.html
@@ -82,6 +96,30 @@ case "$request" in
   GET\ /lab2/info.html*)
     printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'
     cat lab2/info.html
+    ;;
+  GET\ /lab3/index.html*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'
+    cat lab3/index.html
+    ;;
+  GET\ /lab3/local.html*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'
+    cat lab3/local.html
+    ;;
+  GET\ /lab3/multimedia.html*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'
+    cat lab3/multimedia.html
+    ;;
+  GET\ /lab3/info.html*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'
+    cat lab3/info.html
+    ;;
+  GET\ /tutoriais.css*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/css\r\nConnection: close\r\n\r\n'
+    cat tutoriais.css
+    ;;
+  GET\ /tutoriais.html*)
+    printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'
+    cat tutoriais.html
     ;;
   *)
     printf 'HTTP/1.1 200 OK\r\nContent-Type: text/html; charset=UTF-8\r\nConnection: close\r\n\r\n'

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sintra - Multimédia</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>A minha cidade: Sintra</h1>
+    </header>
+
+    <nav aria-label="Navegação da cidade">
+      <a href="index.html">Início</a>
+      <a href="local.html">Localização</a>
+      <a href="multimedia.html">Multimédia</a>
+      <a href="info.html">Informação</a>
+    </nav>
+
+    <img
+      class="imagem-capa"
+      src="images/capa.jpg"
+      alt="Palácio da Pena em Sintra"
+    />
+
+    <main class="multimedia-main">
+      <h2>Multimédia</h2>
+      <p>Sintra tem palácios, jardins, caminhos na serra e praias próximas.</p>
+
+      <nav aria-label="Conteúdo multimédia">
+        <a href="#imagem">Imagem</a>
+        <a href="#video-background">Background</a>
+        <a href="#parallax">Parallax</a>
+        <a href="#fotografias">Fotografias</a>
+        <a href="#video">Vídeo</a>
+        <a href="#poema">Poema</a>
+      </nav>
+
+      <section id="imagem" class="imagem-emblematica">
+        <img src="images/capa.jpg" alt="Palácio da Pena em Sintra" />
+        <p>Sintra, entre a serra e o mar.</p>
+      </section>
+
+      <section id="video-background" class="video-background">
+        <video autoplay muted loop playsinline>
+          <source
+            src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+            type="video/mp4"
+          />
+        </video>
+        <div>
+          <h3>Vídeo em background</h3>
+          <p>Um movimento simples para dar vida à página.</p>
+        </div>
+      </section>
+
+      <section id="parallax" class="parallax">
+        <h3>Sintra</h3>
+        <p>Uma paisagem para descobrir com calma.</p>
+      </section>
+
+      <section id="fotografias" class="multimedia-secao">
+        <h3>Fotografias</h3>
+        <div class="fotografias">
+          <img src="images/sintra-1.jpg" alt="Castelo dos Mouros" />
+          <img src="images/sintra-2.jpg" alt="Muralhas do Castelo dos Mouros" />
+          <img src="images/sintra-3.jpg" alt="Paisagem do Castelo dos Mouros" />
+          <img src="images/sintra-4.jpg" alt="Vista da Serra de Sintra" />
+          <img src="images/sintra-5.jpg" alt="Castelo dos Mouros na serra" />
+          <img src="images/sintra-6.jpg" alt="Palácio Nacional de Sintra" />
+          <img src="images/sintra-7.jpg" alt="Torres do Palácio Nacional" />
+          <img src="images/sintra-8.jpg" alt="Palácio da Pena" />
+        </div>
+      </section>
+
+      <section id="video" class="multimedia-secao">
+        <h3>Vídeo</h3>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube-nocookie.com/embed/3SCsc_VszZA"
+          title="Vídeo sobre a Quinta da Regaleira em Sintra"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="poema" class="multimedia-secao">
+        <h3>Poema</h3>
+        <div class="poema">
+          <p>Entre a serra e o céu, Sintra acorda devagar,</p>
+          <p>com palácios entre árvores e caminhos para andar.</p>
+          <p>O vento passa leve, vindo do mar,</p>
+          <p>e a vila fica na memória quando é hora de voltar.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>DIW · 2026/27</p>
+    </footer>
+  </body>
+</html>

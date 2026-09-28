@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  color: #222222;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+header {
+  padding: 24px;
+  background-color: #315b45;
+  color: white;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 12px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+}
+
+nav a {
+  color: white;
+}
+
+main {
+  width: min(900px, calc(100% - 32px));
+  margin: 24px auto;
+}
+
+section {
+  margin-bottom: 24px;
+  padding: 24px;
+  background-color: white;
+}
+
+iframe {
+  display: block;
+  width: 100%;
+  min-height: 320px;
+  border: 0;
+}
+
+.tutorial-videos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+article {
+  padding: 16px;
+  border: 1px solid #cccccc;
+  background-color: #fafafa;
+}
+
+article h3 {
+  margin-top: 0;
+}
+
+.tutorial-videos iframe {
+  min-height: 240px;
+}
+
+.codepens {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.codepens iframe {
+  min-height: 400px;
+}
+
+footer {
+  padding: 16px;
+  background-color: #222222;
+  color: white;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (width <= 650px) {
+  main {
+    width: calc(100% - 16px);
+  }
+
+  section {
+    padding: 16px;
+  }
+
+  .codepens {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-videos {
+    grid-template-columns: 1fr;
+  }
+}
