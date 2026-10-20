@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 24px;
+  color: #222;
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: #315b45;
+}
+
+header {
+  margin-bottom: 24px;
+}
+
+.cartoes {
+  display: grid;
+  gap: 12px;
+}
+
+.cartao {
+  display: block;
+  padding: 16px;
+  border: 1px solid #bbb;
+  color: #222;
+  text-decoration: none;
+}
+
+.cartao:hover,
+.cartao:focus-visible {
+  border-color: #315b45;
+}
+
+.cartao h2 {
+  margin: 0;
+}
+
+.exemplo {
+  padding: 16px;
+  border: 1px solid #bbb;
+  background: #f4f4f4;
+}
+
+.exemplo h2:first-child {
+  margin-top: 0;
+}
+
+.caixa {
+  padding: 12px;
+  border: 1px solid #315b45;
+  background: white;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.estrutura {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 12px;
+}
+
+.estrutura header,
+.estrutura footer {
+  grid-column: 1 / -1;
+  margin: 0;
+  padding: 12px;
+  background: #315b45;
+  color: white;
+}
+
+.estrutura main,
+.estrutura aside,
+.estrutura section,
+.estrutura article {
+  padding: 12px;
+  border: 1px solid #bbb;
+  background: white;
+}
+
+.box-model-demo {
+  margin: 24px;
+  padding: 24px;
+  border: 5px solid #315b45;
+  border-radius: 12px;
+  background: #dce9df;
+}
+
+.position-demo {
+  position: relative;
+  min-height: 280px;
+  overflow: hidden;
+  background: url("../lab2/images/capa.jpg") center / cover;
+}
+
+.position-demo h2 {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  margin: 0;
+  padding: 8px;
+  background: white;
+}
+
+.selector-element {
+  color: #315b45;
+}
+
+#selector-id {
+  font-weight: bold;
+}
+
+input[type="text"] {
+  border: 2px solid #315b45;
+}
+
+.selector-list li:first-child {
+  text-decoration: underline;
+}
+
+.selector-list li::before {
+  content: "-> ";
+}
+
+@media (width <= 500px) {
+  body {
+    padding: 16px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .estrutura {
+    grid-template-columns: 1fr;
+  }
+}
