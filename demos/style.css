@@ -47,10 +47,6 @@ header {
   background: #f4f4f4;
 }
 
-.exemplo h2:first-child {
-  margin-top: 0;
-}
-
 .caixa {
   padding: 12px;
   border: 1px solid #315b45;
@@ -115,6 +111,10 @@ header {
   margin: 0;
   padding: 8px;
   background: white;
+}
+
+.exemplo h2:first-child {
+  margin-top: 0;
 }
 
 .selector-element {

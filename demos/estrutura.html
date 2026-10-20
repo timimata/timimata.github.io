@@ -7,14 +7,18 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header aria-label="Cabeçalho da página">
       <h1>Elementos estruturais HTML5</h1>
       <a href="index.html">Voltar às demos</a>
     </header>
     <div class="exemplo estrutura">
-      <header><strong>header</strong> - Tiago Machado</header>
-      <nav><strong>nav</strong><br /><a href="#artigo">Início</a></nav>
-      <main>
+      <header aria-label="Cabeçalho da demonstração">
+        <strong>header</strong> - Tiago Machado
+      </header>
+      <nav aria-label="Navegação da demonstração">
+        <strong>nav</strong><br /><a href="#artigo">Início</a>
+      </nav>
+      <main aria-label="Conteúdo principal da demonstração">
         <strong>main</strong>
         <section>
           <strong>section</strong>
@@ -23,8 +27,12 @@
           </article>
         </section>
       </main>
-      <aside><strong>aside</strong><br />Informação complementar.</aside>
-      <footer><strong>footer</strong> - 2026</footer>
+      <aside aria-label="Informação complementar">
+        <strong>aside</strong><br />Informação complementar.
+      </aside>
+      <footer aria-label="Rodapé da demonstração">
+        <strong>footer</strong> - 2026
+      </footer>
     </div>
   </body>
 </html>
