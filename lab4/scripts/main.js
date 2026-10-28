@@ -5,7 +5,6 @@ const mensagem = document.querySelector("#mensagem");
 const imagem = document.querySelector("#imagem");
 const contador = document.querySelector("#contador");
 const botaoMais = document.querySelector("#botao-mais");
-const botaoZerar = document.querySelector("#botao-zerar");
 const posicao = document.querySelector("#posicao");
 
 // 1. click: aumenta o contador
@@ -13,13 +12,6 @@ function somar() {
   contagem++;
   contador.textContent = contagem;
   contador.style.color = "green";
-}
-
-// 1. click: zera o contador
-function zerar() {
-  contagem = 0;
-  contador.textContent = contagem;
-  contador.style.color = "red";
 }
 
 // 2. mouseover: o rato entra na imagem
@@ -48,7 +40,6 @@ function mover(evento) {
 }
 
 botaoMais.addEventListener("click", somar);
-botaoZerar.addEventListener("click", zerar);
 imagem.addEventListener("mouseover", entrar);
 imagem.addEventListener("mouseout", sair);
 imagem.addEventListener("dblclick", duploClique);
