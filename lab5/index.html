@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 5 - JavaScript</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lab 5: JavaScript</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>Eventos</h2>
+
+        <p id="passa-por-aqui">Passa o rato por aqui!</p>
+
+        <p id="frase">Sintra é a vila mais bonita de Portugal.</p>
+        <button type="button" class="color" data-color="crimson">
+          Vermelho
+        </button>
+        <button type="button" class="color" data-color="seagreen">Verde</button>
+        <button type="button" class="color" data-color="royalblue">Azul</button>
+
+        <p id="pinta">Dá um duplo clique para me pintar.</p>
+
+        <label for="escreve">Escreve aqui:</label>
+        <input id="escreve" type="text" />
+
+        <label for="cor-fundo">Cor de fundo:</label>
+        <select id="cor-fundo">
+          <option value="white">Branco</option>
+          <option value="lightyellow">Amarelo</option>
+          <option value="lightblue">Azul</option>
+          <option value="lightpink">Rosa</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>Bolas</h2>
+        <label for="direcao">Direção:</label>
+        <select id="direcao">
+          <option value="row">row</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">column</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
+
+        <div id="caixa">
+          <div class="bola"></div>
+          <div class="bola"></div>
+          <div class="bola"></div>
+          <div class="bola"></div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Formulário</h2>
+        <form>
+          <label for="nome">Nome:</label>
+          <input id="nome" type="text" placeholder="insira o seu nome" />
+          <label for="idade">Idade:</label>
+          <input id="idade" type="number" placeholder="insira a sua idade" />
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="saudacao"></p>
+      </section>
+
+      <section>
+        <h2>Contador</h2>
+        <p id="contador">0</p>
+        <button type="button" id="mais">+</button>
+        <button type="button" id="menos">-</button>
+        <button type="button" id="repor">Repor</button>
+      </section>
+
+      <section>
+        <h2>Temporizador</h2>
+        <p id="segundos">0</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>DIW · 2026/27</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

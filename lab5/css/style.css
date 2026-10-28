@@ -1,0 +1,36 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header,
+footer {
+  padding: 1rem;
+  background-color: darkgreen;
+  color: white;
+  text-align: center;
+}
+
+main {
+  padding: 1rem;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+#caixa {
+  display: flex;
+  gap: 10px;
+  height: 200px;
+  margin-top: 1rem;
+  background-color: gray;
+}
+
+.bola {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: orange;
+}
