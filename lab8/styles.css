@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background-image: url("https://cdn.pixabay.com/photo/2016/06/02/02/33/triangles-1430105_1280.png");
+}
+
+header,
+footer {
+  padding: 1rem;
+  color: white;
+  background-color: #1d3557;
+}
+
+header img {
+  height: 60px;
+}
+
+nav a {
+  margin-right: 1rem;
+  color: white;
+}
+
+section {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: white;
+}
+
+#produtos select,
+#produtos input,
+#cesto input,
+#cesto button {
+  margin: 0 0.5rem 1rem 0;
+}
+
+section div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+article {
+  width: 250px;
+  padding: 1rem;
+  border-radius: 10px;
+  background-color: lightyellow;
+}
+
+article img {
+  width: 100%;
+}
