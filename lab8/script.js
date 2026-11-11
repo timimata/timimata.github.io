@@ -152,7 +152,6 @@ nodeComprar.addEventListener("click", comprar);
 fetch(`${API}/products`)
   .then((response) => response.json())
   .then((produtos) => {
-    // o preço vem como texto, a imagem sem o endereço da API e a descrição com emojis
     produtos.forEach((produto) => {
       produto.price = Number(produto.price);
       produto.image = API + produto.image;
